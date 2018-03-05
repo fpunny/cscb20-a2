@@ -4,16 +4,24 @@
 */
 
 * {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
   font-weight: normal;
   font-stretch: extra-expanded;
 }
+
+h1 { font-size: 2rem; }
+h2 { font-size: 2.1rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.7rem; }
+h5 { font-size: 1.6rem; }
+h6 { font-size: 1.5rem; }
 
 #nav {
   display: flex;
@@ -27,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
               box-shadow 0.4s ease-in-out 0s;
   position: fixed;
   color: white;
+  z-index: 10;
 }
 
 #nav ul {
@@ -36,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #nav ul li > a {
-  color: white;
+  color: inherit;
   text-decoration: none;
   transition: color 0.4s ease-in-out 0s;
   padding: 20px;
@@ -48,31 +57,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-  padding: 0 15%;
+  padding: 30px 15%;
 }
 
-/*
-  index.html
-*/
-#home-header {
-  background-image: url('src/landing.jpg');
-  color: white;
-  padding-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-}
-
-#home-header-title {
-  padding-right: 100px;
-}
-
-#home-header-title h1 {
-  line-height: 35px;
-  font-size: 2rem;
-}
-
-#home-header-title h3 {
-  font-size: 1.5rem;
+.line-spacing {
+  border: 2px solid #aeafb2;
+  border-radius: 2px;
+  margin: 10px auto;
 }

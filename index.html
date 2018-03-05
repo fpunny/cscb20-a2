@@ -1,14 +1,15 @@
 <html>
   <head>
     <title>CSCB20 - Introduction to Web & Databases</title>
-    <link rel='stylesheet' type='text/css' href='index.css'>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Lato" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='css/index.css'>
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Source+Sans+Pro" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
   <body>
     <nav id="nav">
-      <span id="nav-logo">CSCB20</span>
-      <ul>
+      <ul id="nav-text">
+        <li><a id="nav-logo" href="#">CSCB20</a></li>
         <li><a href="#">Home</a></li>
         <li><a href="#">Syllabus</a></li>
         <li><a href="#">Assignments</a></li>
@@ -22,31 +23,76 @@
       <object type="image/svg+xml" data="src/stack.svg" style="width: 350px;"></object>
       <div id="home-header-title">
         <h1><strong>CSCB20</strong> Introduction to Web &amp; Databases</h1>
-        <h3>Winter 2018</h3>
+        <span>Winter 2018</span>
       </div>
     </header>
-    <section class="section">
-      <h2>News &amp; Announcements</h2>
+    <section id="home-newsfeed" class="section">
+      <div id="home-newsfeed-backdrop"></div>
+      <h2 class="home-newsfeed-title">News &amp; Announcements</h2>
+      <div id="home-newsfeed-text">
+        <div class="home-news-item">
+          <h3 class="home-news-title">Lorem Ipsum</h3>
+          <div class="home-news-data">
+            <span class="home-news-date">January 21, 2018</span>
+          </div>
+          <p class="home-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis tristique tortor. Integer ultricies a quam ut tempor. Aliquam id feugiat libero. Vivamus fermentum est a tellus mattis, eu pellentesque enim vulputate. Curabitur maximus ante a imperdiet placerat. Fusce gravida enim tempus sagittis tempus. Phasellus ac augue hendrerit, congue tellus vel, elementum tortor. Aliquam eu sapien ut leo varius porttitor non et ligula. Praesent pharetra quam mollis, rhoncus neque id, iaculis mauris. Morbi et varius mi. Nulla convallis id ligula nec pulvinar. Donec mi mi, congue id varius ut, malesuada eu nibh. Aenean porta ipsum id lacus aliquam, in lacinia erat cursus.</p>
+        </div>
+        <div class="home-news-item">
+          <h3 class="home-news-title">Lorem Ipsum</h3>
+          <div class="home-news-data">
+            <span class="home-news-date">January 21, 2018</span>
+          </div>
+          <p class="home-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis tristique tortor. Integer ultricies a quam ut tempor. Aliquam id feugiat libero. Vivamus fermentum est a tellus mattis, eu pellentesque enim vulputate. Curabitur maximus ante a imperdiet placerat. Fusce gravida enim tempus sagittis tempus. Phasellus ac augue hendrerit, congue tellus vel, elementum tortor. Aliquam eu sapien ut leo varius porttitor non et ligula. Praesent pharetra quam mollis, rhoncus neque id, iaculis mauris. Morbi et varius mi. Nulla convallis id ligula nec pulvinar. Donec mi mi, congue id varius ut, malesuada eu nibh. Aenean porta ipsum id lacus aliquam, in lacinia erat cursus.</p>
+        </div>
+        <div class="home-news-item">
+          <h3 class="home-news-title">Lorem Ipsum</h3>
+          <div class="home-news-data">
+            <span class="home-news-date">January 21, 2018</span>
+          </div>
+          <p class="home-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis tristique tortor. Integer ultricies a quam ut tempor. Aliquam id feugiat libero. Vivamus fermentum est a tellus mattis, eu pellentesque enim vulputate. Curabitur maximus ante a imperdiet placerat. Fusce gravida enim tempus sagittis tempus. Phasellus ac augue hendrerit, congue tellus vel, elementum tortor. Aliquam eu sapien ut leo varius porttitor non et ligula. Praesent pharetra quam mollis, rhoncus neque id, iaculis mauris. Morbi et varius mi. Nulla convallis id ligula nec pulvinar. Donec mi mi, congue id varius ut, malesuada eu nibh. Aenean porta ipsum id lacus aliquam, in lacinia erat cursus.</p>
+        </div>
+      </div>
+      <hr class="line-spacing" width="70%">
     </section>
-    <section class="section">
-      <h2>Course Resources</h2>
-      <div>
-        <h3>Syllabus</h3>
-      </div>
-      <div>
-        <h3>Assignments</h3>
-      </div>
-      <div>
-        <h3>Labs</h3>
-      </div>
-      <div>
-        <h3>Piazza</h3>
-      </div>
-      <div>
-        <h3>Markus</h3>
-      </div>
-      <div>
-        <h3>Course Team</h3>
+    <section id="home-res" class="section">
+      <h2 id="home-res-title">Course Resources</h2>
+      <div id="home-res-items">
+        <div class="home-res-item">
+          <i class="far fa-map home-res-icon"></i>
+          <h3 class="home-res-item-title">Syllabus</h3>
+          <p class="home-res-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="home-res-item-button" href="#">Button</a>
+        </div>
+        <div class="home-res-item">
+          <i class="fas fa-terminal home-res-icon"></i>
+          <h3 class="home-res-item-title">Assignments</h3>
+          <p class="home-res-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="home-res-item-button" href="#">Button</a>
+        </div>
+        <div class="home-res-item">
+          <i class="fas fa-flask home-res-icon"></i>
+          <h3 class="home-res-item-title">Labs</h3>
+          <p class="home-res-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="home-res-item-button" href="#">Button</a>
+        </div>
+        <div class="home-res-item">
+          <i class="far fa-comments home-res-icon"></i>
+          <h3 class="home-res-item-title">Piazza</h3>
+          <p class="home-res-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="home-res-item-button" href="#">Button</a>
+        </div>
+        <div class="home-res-item">
+          <i class="fas fa-chart-bar home-res-icon"></i>
+          <h3 class="home-res-item-title">Markus</h3>
+          <p class="home-res-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="home-res-item-button" href="#">Button</a>
+        </div>
+        <div class="home-res-item">
+          <i class="fas fa-users home-res-icon"></i>
+          <h3 class="home-res-item-title">Course Team</h3>
+          <p class="home-res-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="home-res-item-button" href="#">Button</a>
+        </div>
       </div>
     </section>
     <footer class="section">
