@@ -22,7 +22,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  transition: height 0.4s ease-in-out 0s;
+  transition: height 0.4s ease-in-out 0s,
+              background-color 0.4s ease-in-out 0s,
+              box-shadow 0.4s ease-in-out 0s;
   position: fixed;
   color: white;
 }
@@ -36,13 +38,41 @@ h1, h2, h3, h4, h5, h6 {
 #nav ul li > a {
   color: white;
   text-decoration: none;
+  transition: color 0.4s ease-in-out 0s;
   padding: 20px;
+}
+
+#nav #nav-logo {
+  font-weight:  bold;
+  font-size: 1.4rem;
+}
+
+.section {
+  padding: 0 15%;
 }
 
 /*
   index.html
 */
 #home-header {
-  background-color: #242424;
+  background-image: url('src/landing.jpg');
   color: white;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+#home-header-title {
+  padding-right: 100px;
+}
+
+#home-header-title h1 {
+  line-height: 35px;
+  font-size: 2rem;
+}
+
+#home-header-title h3 {
+  font-size: 1.5rem;
 }
