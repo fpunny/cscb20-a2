@@ -26,6 +26,7 @@ h6 { font-size: 1.5rem; }
 #nav {
   display: flex;
   width: 100%;
+  box-sizing: border-box;
   height: 90px;
   align-items: center;
   justify-content: center;
@@ -38,22 +39,70 @@ h6 { font-size: 1.5rem; }
   z-index: 10;
 }
 
-#nav ul {
+#nav-text {
   display: flex;
   list-style-type: none;
   padding: 0 20px;
 }
 
-#nav ul li > a {
+#nav-text li > a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease-in-out 0s;
   padding: 20px;
 }
 
-#nav #nav-logo {
-  font-weight:  bold;
+#nav-logo {
+  font-weight: bold;
   font-size: 1.4rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #2b2c31;
+}
+
+#footer {
+  display: flex;
+  color: #d9d9df;
+}
+
+#footer .footer-sub {
+  font-size: 1.1rem;
+}
+
+#footer .footer-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .footer-col ul {
+  font-size: 1.2rem;
+  list-style-type: none;
+  margin-right: 30px;
+  width: 50%;
+  margin-top: 4px;
+}
+
+#footer .footer-col ul li > a {
+  color: inherit;
+  text-decoration: none;
+  padding: 8px 12px;
+  padding-left: 0;
+}
+
+#footer .footer-menu {
+  flex-direction: row;
+  display: flex;
+  padding-top: 4px;
+}
+
+.nav-dropped {
+  height: 60px !important;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .section {
@@ -64,4 +113,63 @@ h6 { font-size: 1.5rem; }
   border: 2px solid #aeafb2;
   border-radius: 2px;
   margin: 10px auto;
+}
+
+#footer-head {
+  line-height: 32px;
+  padding-bottom: 12px;
+}
+
+#footer-col-menu {
+  padding-left: 20px;
+}
+
+#nav-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+
+  .section {
+    padding: 30px 5%;
+  }
+
+  #nav {
+    padding: 0 30px;
+  }
+
+  #nav-text {
+    display: none;
+  }
+
+  #nav-mobile {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  #footer {
+    flex-direction: column;
+  }
+
+  #footer-col-menu {
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  #footer .footer-col {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #footer .footer-col {
+    width: 100%;
+  }
+
+  #home-header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
