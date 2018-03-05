@@ -56,6 +56,42 @@ h6 { font-size: 1.5rem; }
   font-size: 1.4rem;
 }
 
+#footer {
+  display: flex;
+}
+
+#footer .footer-sub {
+  font-size: 1.1rem;
+}
+
+#footer .footer-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .footer-col ul {
+  color: black;
+  font-size: 1.2rem;
+  list-style-type: none;
+  margin-right: 30px;
+  width: 50%;
+  margin-top: 4px;
+}
+
+#footer .footer-col ul li > a {
+  color: inherit;
+  text-decoration: none;
+  padding: 8px 12px;
+  padding-left: 0;
+}
+
+#footer .footer-menu {
+  flex-direction: row;
+  display: flex;
+  padding-top: 4px;
+}
+
 .section {
   padding: 30px 15%;
 }

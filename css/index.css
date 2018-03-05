@@ -80,6 +80,7 @@
 
 #home-res {
   background-color: #eceef2;
+  padding-bottom: 50px;
 }
 
 #home-res-items {
@@ -108,9 +109,14 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+.home-res-item-title {
+  color: #0f76df;
+}
+
 .home-res-icon {
-  font-size: 2.2rem;
-  margin-bottom: 16px;
+  font-size: 3.4rem;
+  margin-bottom: 20px;
+  margin-top: 16px;
 }
 
 .home-res-item-button {
@@ -120,4 +126,11 @@
   width: 80%;
   border: 2px solid black;
   margin-top: 16px;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.home-res-item-button:hover {
+  background-color: #0f76df;
+  border: 2px solid #0f76df;
+  color: white;
 }
