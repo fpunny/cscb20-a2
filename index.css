@@ -1,0 +1,47 @@
+/*
+  Color Scheme
+  https://coolors.co/333333-48e5c2-fcfaf9-f3d3bd-5e5e5e
+*/
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-stretch: extra-expanded;
+}
+
+#nav {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: height 0.4s ease-in-out 0s;
+  position: fixed;
+}
+
+#nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+#nav ul li > a {
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+}
+
+/*
+  index.html
+*/
+#home-header {
+  background-color: #242424;
+  color: white;
+}
