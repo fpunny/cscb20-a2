@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   transition: height 0.4s ease-in-out 0s;
   position: fixed;
+  color: white;
 }
 
 #nav ul {
@@ -33,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #nav ul li > a {
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 20px;
 }
