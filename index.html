@@ -13,19 +13,31 @@
     <nav id="nav">
       <a id="nav-logo" href="#">CSCB20</a>
       <ul id="nav-text">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Syllabus</a></li>
-        <li><a href="#">Assignments</a></li>
-        <li><a href="#">Labs</a></li>
-        <li><a href="#">Piazza</a></li>
-        <li><a href="#">Markus</a></li>
-        <li><a href="#">Course Team</a></li>
-        <li><a href="#">Feedback</a></li>
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>Syllabus</li></a>
+        <a href="#"><li>Assignments</li></a>
+        <a href="#"><li>Labs</li></a>
+        <a href="#"><li>Piazza</li></a>
+        <a href="#"><li>Markus</li></a>
+        <a href="#"><li>Course Team</li></a>
+        <a href="#"><li>Feedback</li></a>
       </ul>
       <div id="nav-mobile">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" onclick="setMobileNav(true)"></i>
       </div>
     </nav>
+    <ul id="nav-mobile-text">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Syllabus</li></a>
+      <a href="#"><li>Assignments</li></a>
+      <a href="#"><li>Labs</li></a>
+      <a href="#"><li>Piazza</li></a>
+      <a href="#"><li>Markus</li></a>
+      <a href="#"><li>Course Team</li></a>
+      <a href="#"><li>Feedback</li></a>
+    </ul>
+    <div id="nav-mobile-backdrop" onclick="setMobileNav(false)"></div>
+
     <header id="home-header" class="section">
       <object type="image/svg+xml" data="src/stack.svg" style="width: 350px;"></object>
       <div id="home-header-title">
@@ -114,16 +126,16 @@
           <h3>Navigation</h3>
           <div class="footer-menu">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="#">Assignments</a></li>
-              <li><a href="#">Labs</a></li>
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>Syllabus</li></a>
+              <a href="#"><li>Assignments</li></a>
+              <a href="#"><li>Labs</li></a>
             </ul>
             <ul>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Markus</a></li>
-              <li><a href="#">Course Team</a></li>
-              <li><a href="#">Feedback</a></li>
+              <a href="#"><li>Piazza</li></a>
+              <a href="#"><li>Markus</li></a>
+              <a href="#"><li>Course Team</li></a>
+              <a href="#"><li>Feedback</li></a>
             </ul>
           </div>
         </div>
