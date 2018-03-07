@@ -23,10 +23,10 @@
         <a href="#"><li>Feedback</li></a>
       </ul>
       <div id="nav-mobile">
-        <i class="fas fa-bars" onclick="setMobileNav(true)"></i>
+        <i id="nav-mobile-btn" class="fas fa-bars" onclick="setMobileNav(true)"></i>
       </div>
     </nav>
-    <ul id="nav-mobile-text">
+    <ul id="nav-mobile-text" class="pos-default">
       <a href="#"><li>Home</li></a>
       <a href="#"><li>Syllabus</li></a>
       <a href="#"><li>Assignments</li></a>
@@ -36,7 +36,7 @@
       <a href="#"><li>Course Team</li></a>
       <a href="#"><li>Feedback</li></a>
     </ul>
-    <div id="nav-mobile-backdrop" onclick="setMobileNav(false)"></div>
+    <div id="nav-mobile-backdrop" class="pos-default" onclick="setMobileNav(false)"></div>
 
     <header id="home-header" class="section">
       <object type="image/svg+xml" data="src/stack.svg" style="width: 350px;"></object>
@@ -117,13 +117,13 @@
     <footer class="section">
       <div id="footer">
         <div class="footer-col">
-          <h2><strong>CSCB20</strong></h2>
-          <h2 id="footer-head">Introduction to Web &amp; Databases</h2>
+          <h2 class="footer-title"><strong>CSCB20</strong></h2>
+          <h2 id="footer-head" class="footer-title">Introduction to Web &amp; Databases</h2>
           <h3 class="footer-sub">Department of Computer Science at UofT</h3>
-          <h3 class="footer-sub">Site Designed by <strong>Frederic Pun</strong> &amp; <strong>Nancy Feng</strong></h3>
+          <h3 class="footer-sub">Site Designed by <strong class="footer-title">Frederic Pun</strong> &amp; <strong class="footer-title">Nancy Feng</strong></h3>
         </div>
         <div id="footer-col-menu" class="footer-col">
-          <h3>Navigation</h3>
+          <h3 class="footer-title">Navigation</h3>
           <div class="footer-menu">
             <ul>
               <a href="#"><li>Home</li></a>
