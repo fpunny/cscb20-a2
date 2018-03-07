@@ -17,10 +17,27 @@ window.addEventListener("scroll", () => {
 
 function setMobileNav(state) {
   if (state) {
-    mobilenav.style.display = "flex";
     mobileback.style.display = "flex";
+    mobilenav.style.display = "flex";
+    mobilenav.style.opacity = 0;
+
+    (function fade() {
+      var val = parseFloat(mobilenav.style.opacity);
+      if (!((val += .05) > 1)) {
+        mobilenav.style.opacity = val;
+        mobileback.style.opacity = val;
+        requestAnimationFrame(fade);
+      }
+    })();
   } else {
-    mobilenav.style.display = "none";
-    mobileback.style.display = "none";
+
+    (function fade() {
+      if ((mobilenav.style.opacity -= .05, mobileback.style.opacity -= .05) < 0) {
+        mobilenav.style.display = "none";
+        mobileback.style.display = "none";
+      } else {
+        requestAnimationFrame(fade);
+      }
+    })();
   }
 }
