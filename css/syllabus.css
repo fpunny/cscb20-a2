@@ -77,3 +77,18 @@
   background-color: #ff2b2b;
   z-index: 0;
 }
+
+@media screen and (max-width: 800px) {
+
+  #syllabus .content {
+    flex-direction: column;
+  }
+
+  #syllabus #syll-col-1 {
+    margin-right: 0px;
+  }
+
+  #syllabus #syll-col-2 {
+    margin-left: 0px;
+  }
+}

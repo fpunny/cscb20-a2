@@ -196,6 +196,16 @@ footer {
   color: white;
 }
 
+.hidden-href {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3 ease-in-out 0s;
+}
+
+.hidden-href:hover {
+  color: white;
+}
+
 @media screen and (max-width: 1050px) {
 
   .section {
