@@ -1,0 +1,87 @@
+#lab {
+  background-color: rgba(0,0,0,0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 140px;
+}
+
+#lab-backdrop {
+  margin-top: 0;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #00acd0;
+  z-index: 0;
+}
+
+#lab-title {
+  z-index: 2;
+  color: white;
+  padding-bottom: 20px;
+  font-size: 2.4rem;
+}
+
+#lab .content {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 2;
+  margin: 0 -10px;
+  margin-top: -10px;
+}
+
+#lab .content-date-wrapper {
+  padding: 14px 0;
+  padding-top: 10px;
+}
+
+#lab .content-card ul {
+  padding-left: 40px;
+}
+
+#lab .content-card h3 {
+  font-size: 1.6rem;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+#lab .content-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+  transition: box-shadow 0.3s ease-in-out 0s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#lab .content-card:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#lab .attachments {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#lab .content-resources {
+  display: flex;
+}
+
+#lab .attachments > a, #lab .content-date, #lab .content-resources > a {
+  color: white;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  margin-right: 6px;
+  background-color: #21a7e7;
+  border-radius: 20px;
+  transition: background-color 0.3s ease-in-out 0s;
+}
+
+#lab .attachments > a:hover, #lab .content-date:hover, #lab .content-resources > a:hover {
+  background-color: #0b88c4;
+}
