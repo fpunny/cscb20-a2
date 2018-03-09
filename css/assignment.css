@@ -123,3 +123,10 @@
   transition: background-color 0.4s ease-in-out 0s;
   background-color: rgba(0,0,0,0.4);
 }
+
+@media screen and (max-width: 400px) {
+  #assignment .content-card {
+    min-width: auto;
+    width: 100%;
+  }
+}

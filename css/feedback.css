@@ -34,7 +34,6 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding: 20px;
   margin: 10px;
   position: relative;
   top: -40px;
@@ -49,7 +48,6 @@
 
 #feedback #feedback-card-1 {
   flex: 1;
-  min-width: 325px;
   position: relative;
 }
 
@@ -60,21 +58,15 @@
 #feedback .content-card h2 {
   color: white;
   padding-top: 24px;
-  padding-bottom: 32px;
-  z-index: 2;
 }
 
-#feedback .content-card .feedback-card-back {
-  background-color: #3f4145;
-  height: 93.5px;
-  width: 100%;
-  margin-top: 0;
-  position: absolute;
-}
-#feedback #feedback-card-2-header {
+#feedback .feedback-card-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  z-index: 2;
+  padding: 20px;
+  padding-bottom: 13px;
+  background-color: #3f4145;
 }
 
 #feedback #feedback-form-input {
@@ -100,6 +92,10 @@
   padding-left: 26px;
 }
 
+#feedback .feedback-card-content {
+  padding: 20px;
+}
+
 #feedback .content-card ul li {
   margin-bottom: 8px;
 }
@@ -107,7 +103,6 @@
 #feedback #feedback-submit-btn {
   margin-left: auto;
   padding: 12px 20px;
-  margin-bottom: 38px;
   font-stretch: ultra-expanded;
   font-size: 0.95rem;
   border: 2px solid white;

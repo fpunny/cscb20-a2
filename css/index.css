@@ -2,6 +2,11 @@ h2 {
   font-size: 2.1rem;
 }
 
+#home-header #stack {
+  width: 350px;
+  max-width: 100%;
+}
+
 #home-header {
   background-image: url('../src/landing.jpg');
   color: white;

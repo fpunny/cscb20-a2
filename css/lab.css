@@ -120,3 +120,9 @@
 #lab .content-btn:hover {
   background-color: #005cc7;
 }
+
+@media screen and (max-width: 400px) {
+  #lab .content-card {
+    min-width: auto;
+  }
+}
