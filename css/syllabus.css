@@ -60,15 +60,30 @@
   margin-bottom: 14px;
 }
 
-#syllabus #grading-table th {
+#syllabus #grading-table {
+  display: table;
+  padding-left: 20px;
+  padding-bottom: 12px;
+}
+
+#syllabus #grading-table .table-row {
+  display: table-row;
+}
+
+#syllabus #grading-table .table-row div {
+  display: table-cell;
+}
+
+#syllabus #grading-table .table-row div:first-child {
   text-align: right;
 }
 
-#syllabus #grading-table td:nth-child(2) {
+#syllabus #grading-table .table-row div:nth-child(2) {
+  text-align: center;
   padding: 0 8px;
 }
 
-#syllabus #grading-table td:nth-child(3) {
+#syllabus #grading-table .table-row div:nth-child(3) {
   font-size: 0.9rem;
 }
 
