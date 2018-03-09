@@ -2,6 +2,7 @@ let newsfeed = document.getElementById("home-newsfeed");
 let newsfeed_items = document.querySelectorAll(".home-news-item");
 let resources = document.getElementById("home-res");
 let res_items = document.querySelectorAll(".home-res-item");
+let calendar = document.getElementById("calendar-wrapper");
 
 window.addEventListener("scroll", function newsListener() {
   if (document.body.scrollTop > 0) {
@@ -17,6 +18,13 @@ window.addEventListener("scroll", function newsListener() {
   }
 });
 
+window.addEventListener("scroll", function calListener() {
+  if (document.body.scrollTop > calendar.offsetTop - (window.screen.height * (2 / 3))) {
+    calendar.classList.add("drop-animate");
+    window.removeEventListener("scroll", calListener);
+  }
+});
+
 window.addEventListener("scroll", function resListener() {
   if (document.body.scrollTop > resources.offsetTop - (window.screen.height * (2 / 3))) {
     for (i = 0; i < res_items.length; i++) {
@@ -27,6 +35,6 @@ window.addEventListener("scroll", function resListener() {
         }, (i) * 300);
       })(res_items[i]);
     }
-    window.removeEventListener("scroll", newsListener);
+    window.removeEventListener("scroll", resListener);
   }
 });
