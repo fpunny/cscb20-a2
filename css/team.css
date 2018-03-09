@@ -75,3 +75,10 @@
   font-size: 1.1rem;
   flex: 1;
 }
+
+@media screen and (max-width: 300px) {
+  #team .content-card {
+    min-width: auto;
+    width: 100%;
+  }
+}
