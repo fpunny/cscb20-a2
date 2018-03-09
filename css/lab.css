@@ -39,6 +39,22 @@
   padding-left: 40px;
 }
 
+#lab .content-card-back {
+  position: absolute;
+  height: 110px;
+  background-color: darkgrey;
+  margin-top: 0;
+  width: 100%;
+}
+
+#lab .content-card h2 {
+  color: white;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  z-index: 2;
+}
+
 #lab .content-card h3 {
   font-size: 1.6rem;
   margin-top: 14px;
@@ -53,6 +69,9 @@
   flex: 1;
   min-width: 300px;
   margin: 10px;
+  position: relative;
+  top: -40px;
+  opacity: 0;
   transition: box-shadow 0.3s ease-in-out 0s;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -61,16 +80,12 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-#lab .attachments {
+#lab .content-resources {
   display: flex;
   flex-wrap: wrap;
 }
 
-#lab .content-resources {
-  display: flex;
-}
-
-#lab .attachments > a, #lab .content-date, #lab .content-resources > a {
+#lab .content-resources > a {
   color: white;
   font-size: 0.85rem;
   text-decoration: none;
@@ -82,6 +97,26 @@
   transition: background-color 0.3s ease-in-out 0s;
 }
 
-#lab .attachments > a:hover, #lab .content-date:hover, #lab .content-resources > a:hover {
+#lab .content-resources > a:hover {
   background-color: #0b88c4;
+}
+
+#lab .content-btn-wrapper {
+  display: flex;
+  padding-top: 30px;
+  margin-top: auto;
+}
+
+#lab .content-btn {
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 14px 16px;
+  transition: background-color 0.4s ease-in-out 0s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: #0075ff;
+}
+
+#lab .content-btn:hover {
+  background-color: #005cc7;
 }

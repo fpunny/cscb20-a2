@@ -1,25 +1,28 @@
 let nav = document.getElementById("nav");
-let a = document.querySelectorAll("#nav-text a");
 let text = document.getElementById("nav-text");
 let mobilenav = document.getElementById("nav-mobile-text");
 let mobileback = document.getElementById("nav-mobile-backdrop");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function () {
   if (document.body.scrollTop === 0) {
     nav.classList.remove("nav-dropped");
     text.style.color = "white";
     nav.style.color = "white";
-    for (i in a) {
-      a[i].classList.remove("nax-text-hover");
-    }
+
+    var a = document.querySelectorAll("#nav-text a");
+    [].forEach.call(a, function(i) {
+      i.classList.remove("nax-text-hover");
+    });
 
   } else {
     nav.classList.add("nav-dropped");
     text.style.color = "#3b3b3b";
     nav.style.color = "#3b3b3b";
-    for (i in a) {
-      a[i].classList.add("nax-text-hover");
-    }
+
+    var a = document.querySelectorAll("#nav-text a");
+    [].forEach.call(a, function(i) {
+      i.classList.add("nax-text-hover");
+    });
 
   }
 });
@@ -39,9 +42,8 @@ function setMobileNav(state) {
       }
     })();
   } else {
-
     (function fade() {
-      if ((mobilenav.style.opacity -= .05, mobileback.style.opacity -= .05) < 0) {
+      if ((mobilenav.style.opacity -= .05, mobileback.style.opacity -= .05) < .05) {
         mobilenav.style.display = "none";
         mobileback.style.display = "none";
       } else {
