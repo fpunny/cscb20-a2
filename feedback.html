@@ -1,11 +1,11 @@
 <html>
   <head>
-    <title>CSCB20 - Assignments</title>
+    <title>CSCB20 - Feedback</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#111113">
 
     <link rel='stylesheet' type='text/css' href='css/main.css'>
-    <link rel='stylesheet' type='text/css' href='css/assignment.css'>
+    <link rel='stylesheet' type='text/css' href='css/feedback.css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300|Source+Sans+Pro" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
@@ -37,51 +37,33 @@
       <a href="feedback.html"><li>Feedback</li></a>
     </ul>
     <div id="nav-mobile-backdrop" class="pos-default" onclick="setMobileNav(false)"></div>
-    <section id="assignment" class="section">
-      <div id="assignment-backdrop" class="pos-default"></div>
-      <h1 id="assignment-title">Assignments</h1>
+
+    <section id="feedback" class="section">
+      <div id="feedback-backdrop" class="pos-default"></div>
+      <h1 id="feedback-title">Feedback</h1>
       <div class="content">
-        <div class="content-card">
-          <h2>Assignment 1</h2>
-          <div class="content-crumb">
-            <span class="content-dot">Due: February 9, 11:59</span>
-          </div>
-          <h3>Overview</h3>
-          <p>In a team of 2, using your knowledge in Relational Algebra and MySQL Queries, construct either these to provide the desired result of the statement from a database. There would also be bonus marks for providing also MySQL Queries for the Relational Algebra portion.</p>
-          <h3>Required Tools</h3>
+        <div id="feedback-card-1" class="content-card">
+          <div class="feedback-card-back pos-default"></div>
+          <h2>Your Opinion Matters</h2>
+          <p class="feedback-highlight">Let us know so we can further improve the course</p>
           <ul>
-            <li><a href="https://dev.mysql.com/downloads/mysql/">MySQL Community Edition</a></li>
-            <li>One of the following programs
-              <ul>
-                <li><a href="https://www.sequelpro.com">SequelPro</a></li>
-                <li><a href="https://razorsql.com/download_win.html">RazorSQL</a></li>
-                <li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
-              </ul>
-            </li>
+            <li>What did you like that we should continue?</li>
+            <li>What did you dislike?</li>
+            <li>What do you want to see in the future?</li>
+            <li>Or anything else you can think of...</li>
           </ul>
-          <div class="content-btn-wrapper">
-            <a class="content-btn" href="#">PDF Version</a>
-          </div>
         </div>
-        <div class="content-card">
-          <h2>Assignment 2</h2>
-          <div class="content-crumb">
-            <span class="content-dot">Due: March 12, 11:59</span>
+        <div id="feedback-card-2" class="content-card">
+          <div class="feedback-card-back pos-default"></div>
+          <div id="feedback-card-2-header">
+            <h2>Feedback Form</h2>
+            <button id="feedback-submit-btn">Submit</button>
           </div>
-          <h3>Overview</h3>
-          <p>In a team of 2, using your knowledge in HTML, CSS, and Javascript, create the ideal course website, improving the functionality, look, and responsiveness of current course websites. You would also be providing a mockup and user story. The best submission would be used as an actual course website and an additional 5% bonus.</p>
-          <div class="content-btn-wrapper">
-            <a class="content-btn" href="#">PDF Version</a>
-          </div>
-        </div>
-        <div class="content-card TBR">
-          <h2>Assignment 3</h2>
-          <div class="content-crumb">
-            <span class="content-dot">Due: TBA</span>
-          </div>
+          <textarea id="feedback-form-input" placeholder="What's on your mind?"></textarea>
         </div>
       </div>
     </section>
+
     <footer class="section">
       <div id="footer">
         <div class="footer-col">
@@ -111,5 +93,5 @@
     </footer>
   </body>
   <script src="js/script.js"></script>
-  <script src="js/assignment.js"></script>
+  <script src="js/feedback.js"></script>
 </html>
