@@ -77,6 +77,10 @@
 }
 
 @media screen and (max-width: 300px) {
+  #team .content {
+    flex-direction: column;
+  }
+
   #team .content-card {
     min-width: auto;
     width: 100%;
