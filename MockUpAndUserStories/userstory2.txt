@@ -1,0 +1,7 @@
+As a student user, the student should be able to clearly see all the major sections of the syllabus as seen in the syllabus pdf on blackboard
+
+As a student user, the student should be able to get a PDF version of the syllabus for storage
+
+As a student user, the student should be able to use and clearly see all hyperlinks in the syllabus
+
+As a student user, the student should be able to navigate between all course website pages with ease and using keyboard for accessibility
