@@ -78,6 +78,33 @@ footer {
   background-color: #2b2c31;
 }
 
+#nav-mobile-controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  padding: 10px 20px 4px 10px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+}
+
+#nav-mobile-controls span {
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+
+#nav-mobile-controls > div {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.4s ease-in-out 0s;
+}
+
+#nav-mobile-controls > div:hover {
+  background-color: rgba(0,0,0,0.08);
+}
+
 #footer {
   display: flex;
   color: #a7a7a7;
