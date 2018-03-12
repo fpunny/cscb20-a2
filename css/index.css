@@ -117,7 +117,7 @@ h2 {
   transition: box-shadow 0.4s ease-in-out 0s;
 }
 
-#home-calendar #calendar-wrapper:hover {
+#home-calendar #calendar-wrapper:hover, #home-calendar #calendar-wrapper:focus {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -146,7 +146,7 @@ h2 {
   transition: box-shadow 0.4s ease-in-out 0s;
 }
 
-.home-res-item:hover {
+.home-res-item:hover, .home-res-item:focus {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -170,7 +170,7 @@ h2 {
   transition: all 0.2s ease-in-out 0s;
 }
 
-.home-res-item-button:hover {
+.home-res-item-button:hover, .home-res-item-button:focus {
   background-color: #0f76df;
   border: 2px solid #0f76df;
   color: white;

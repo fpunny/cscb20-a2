@@ -2,6 +2,7 @@ let nav = document.getElementById("nav");
 let text = document.getElementById("nav-text");
 let mobilenav = document.getElementById("nav-mobile-text");
 let mobileback = document.getElementById("nav-mobile-backdrop");
+let focus = false;
 
 window.addEventListener("scroll", function () {
   if (document.body.scrollTop === 0) {
@@ -26,6 +27,30 @@ window.addEventListener("scroll", function () {
 
   }
 });
+
+document.getElementById("nav-logo").addEventListener("blur", function () {
+  if (window.matchMedia("(max-width: 1100px)").matches) {
+    console.log("ding");
+    setMobileNav(true);
+    document.querySelectorAll("#nav-mobile-text a")[0].focus();
+  }
+});
+
+mobilenav.addEventListener("focusin", function () {
+  if (mobilenav.style.display === "none") {
+    setMobileNav(true);
+  }
+  focus = true;
+}, true);
+
+mobilenav.addEventListener("focusout", function () {
+  focus = false;
+  setTimeout(function () {
+    if (!focus) {
+      setMobileNav(false);
+    }
+  }, 200);
+}, true);
 
 function setMobileNav(state) {
   if (state) {

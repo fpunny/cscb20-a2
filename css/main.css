@@ -58,11 +58,11 @@ a {
   padding: 20px;
 }
 
-.nax-text-hover:hover {
+.nax-text-hover:hover, .nax-text-hover:focus {
   background-color: rgba(0,0,0,0.08) !important;
 }
 
-#nav-text a:hover {
+#nav-text a:hover, #nav-text a:focus {
   background-color: rgba(255,255,255,0.08);
 }
 
@@ -112,7 +112,7 @@ footer {
   transition: all 0.3s ease-in-out 0s;
 }
 
-#footer .footer-menu ul a:hover {
+#footer .footer-menu ul a:hover, #footer .footer-menu ul a:focus {
   color: white;
 }
 
@@ -170,13 +170,14 @@ footer {
 
 #nav-mobile-text a {
   color: inherit;
+  box-sizing: border-box;
   text-decoration: none;
   width: 100%;
   padding: 16px 22px;
   transition: background-color 0.2s ease-in-out 0s;
 }
 
-#nav-mobile-text a:hover {
+#nav-mobile-text a:hover, #nav-mobile-text a:focus {
   background-color: rgba(0,0,0,0.08);
 }
 
@@ -205,10 +206,10 @@ footer {
 .hidden-href {
   text-decoration: none;
   color: inherit;
-  transition: color 0.3 ease-in-out 0s;
+  transition: color 0.3s ease-in-out 0s;
 }
 
-.hidden-href:hover {
+.hidden-href:hover, .hidden-href:focus {
   color: white;
 }
 
