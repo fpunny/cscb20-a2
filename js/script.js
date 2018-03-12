@@ -28,11 +28,12 @@ window.addEventListener("scroll", function () {
   }
 });
 
-document.getElementById("nav-logo").addEventListener("blur", function () {
+document.getElementById("nav-logo").addEventListener("focusout", function () {
   if (window.matchMedia("(max-width: 1100px)").matches) {
-    console.log("ding");
     setMobileNav(true);
-    document.querySelectorAll("#nav-mobile-text a")[0].focus();
+    setTimeout(function () {
+      document.querySelectorAll("#nav-mobile-text a")[0].focus();
+    }, 100);
   }
 });
 
