@@ -117,6 +117,25 @@
   color: black;
 }
 
+#feedback .course-eval-wrapper {
+  padding: 16px 0;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+#feedback .course-eval-btn {
+  text-decoration: none;
+  color: #3f4145;
+  border: 2px solid #3f4145;
+  padding: 12px 20px;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+#feedback .course-eval-btn:hover {
+  color: white;
+  background-color: #3f4145;
+}
+
 @media screen and (max-width: 870px) {
   #feedback .content {
     flex-direction: column;
