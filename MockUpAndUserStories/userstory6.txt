@@ -1,7 +1,7 @@
-As a student user, the student should be able to access course evaluations
+1. As a student user, the student should be able to access course evaluations
 
-As a student user, the student should be informed about some topics they can tell the professor
+2. As a student user, the student should be informed about some topics they can tell the professor
 
-As a student user, the student should be able to submit the feedback by clicking the submit button
+3. As a student user, the student should be able to submit the feedback by clicking the submit button
 
-As a student user, the student should be able to navigate between all course website pages with ease and using keyboard for accessibility
+4. As a student user, the student should be able to navigate between all course website pages with ease and using keyboard for accessibility

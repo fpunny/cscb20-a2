@@ -1,9 +1,9 @@
-As a student user, the student should be able to see when an assignment is due
+1. As a student user, the student should be able to see when an assignment is due
 
-As a student user, the student should be able to see the purpose and task of the assignment at an glance
+2. As a student user, the student should be able to see the purpose and task of the assignment at an glance
 
-As a student user, the student should be able to see all the tools required to start the assignment
+3. As a student user, the student should be able to see all the tools required to start the assignment
 
-As a student user, the student should be able to get the assignment handout
+4. As a student user, the student should be able to get the assignment handout
 
-As a student user, the student should be able to navigate between all course website pages with ease and using keyboard for accessibility
+5. As a student user, the student should be able to navigate between all course website pages with ease and using keyboard for accessibility

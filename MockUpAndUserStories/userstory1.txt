@@ -1,21 +1,21 @@
-As a student user, the student must be able to see important news and announcements from the professor up to 1 month at a glance
+1. As a student user, the student must be able to see important news and announcements from the professor up to 1 month at a glance
 
-As a student user, the student must be able to access the home page when clicking the home button under resources
+2. As a student user, the student must be able to access the home page when clicking the home button under resources
 
-As a student user, the student must be able to access the syllabus page when clicking the syllabus button under resources
+3. As a student user, the student must be able to access the syllabus page when clicking the syllabus button under resources
 
-As a student user, the student must be able to access the assignments page when clicking the assignments button under resources
+4. As a student user, the student must be able to access the assignments page when clicking the assignments button under resources
 
-As a student user, the student must be able to access the labs page when clicking the labs button under resources
+5. As a student user, the student must be able to access the labs page when clicking the labs button under resources
 
-As a student user, the student must be able to access the feedback page when clicking the feedback button under resources
+6. As a student user, the student must be able to access the feedback page when clicking the feedback button under resources
 
-As a student user, the student must be able to access the course team page when clicking the course team button under resources
+7. As a student user, the student must be able to access the course team page when clicking the course team button under resources
 
-As a student user, the student must be able to access the Markus when clicking the Markus button under resources
+8. As a student user, the student must be able to access the Markus when clicking the Markus button under resources
 
-As a student user, the student must be able to access the Piazza when clicking the Piazza button under resources
+9. As a student user, the student must be able to access the Piazza when clicking the Piazza button under resources
 
-As a student user, the student must be able to access the calendar page when clicking the calendar button under resources
+10. As a student user, the student must be able to access the calendar page when clicking the calendar button under resources
 
-As a student user, the student must be able to access all course website content with ease and using keyboard for accessibility
+11. As a student user, the student must be able to access all course website content with ease and using keyboard for accessibility

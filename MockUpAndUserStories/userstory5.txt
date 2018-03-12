@@ -1,11 +1,11 @@
-As a student user, the student should be able to see all the TAs in the course
+1. As a student user, the student should be able to see all the TAs and professor in the course
 
-As a student user, the student should be able to see the office hours of the professor and the location of it
+2. As a student user, the student should be able to see the office hours of the professor and the location of it
 
-As a student user, the student should be able to see the emails of all the TAs and professor of the course
+3. As a student user, the student should be able to see the emails of all the TAs and professor of the course
 
-As a student user, by clicking any of the TAs and professor's the email, they should be send to a new email with their emails loaded into it
+4. As a student user, by clicking any of the TAs and professor's the email, they should be send to a new email with their emails loaded into it
 
-As a student user, the student should be able to find their professor and TAs by their picture in the case they forget their names
+5. As a student user, the student should be able to find their professor and TAs by their picture in the case they forget their names
 
-As a student user, the student should be able to navigate between all course website pages with ease and using keyboard for accessibility
+6. As a student user, the student should be able to navigate between all course website pages with ease and using keyboard for accessibility
